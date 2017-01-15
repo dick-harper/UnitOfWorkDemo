@@ -3,6 +3,6 @@ namespace UnitOfWorkDemo.Domain
 {
     public abstract class Entity<TId> where TId : struct 
     {
-        public TId Id { get; set; }
+        public virtual TId Id { get; protected set; }
     }
 }
